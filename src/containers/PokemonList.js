@@ -11,6 +11,7 @@ const PokemonList = (props) => {
   const pokemonList = useSelector(state => state.PokemonList);
   React.useEffect(() => {
     FetchData(1)
+    //eslint-disable-next-line
   }, []);
 
   const FetchData = (page = 1) => {
