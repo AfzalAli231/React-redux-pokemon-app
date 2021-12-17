@@ -9,6 +9,7 @@ const Pokemon = (props) => {
   const pokemonState = useSelector(state => state.Pokemon);
   React.useEffect(() => {
     dispatch(GetPokemon(pokemonName))
+    //eslint-disable-next-line
   }, []);
 
   const ShowData = () => {
